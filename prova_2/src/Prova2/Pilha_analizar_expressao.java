@@ -1,12 +1,12 @@
 package Prova2;
 
-public class Pilha_analizar_express„o {
+public class Pilha_analizar_expressao {
 
 	private String expressao;
 	
-// STRING QUE RECEBE A EXPRESS√O A SER ANALIZADA
+// STRING QUE RECEBE A EXPRESS√ÉO A SER ANALIZADA
 	
-	public Pilha_analizar_express„o(String Expressao) {
+	public Pilha_analizar_expressao(String Expressao) {
 		this.expressao = Expressao;
 	}
 	public String getExpressao() {
@@ -24,7 +24,7 @@ public class Pilha_analizar_express„o {
 			} else if (this.expressao.charAt(i) == ')' || this.expressao.charAt(i) == ']'|| this.expressao.charAt(i) == '}') {
 				if (pilha.estaVazia()) {
 					return false;
-		// SE O SIMBOLO DE FECHAMENTO NA POSI«√O i FOR "PAR" DO SIMBOLO NO  TOPO DA PILHA DESEMPILHA
+		// SE O SIMBOLO DE FECHAMENTO NA POSI√á√ÉO i FOR "PAR" DO SIMBOLO NO  TOPO DA PILHA DESEMPILHA
 				} else if (this.expressao.charAt(i) == ')' && pilha.getTop().equals('(')) {
 					pilha.desempilhar();
 
@@ -41,7 +41,7 @@ public class Pilha_analizar_express„o {
 				return false;
 			}
 		}
-		//SE NO FINAL A PILHA ESTIVER VAZIA A EXPRESS√O … VALIDA , CASO CONTRARIO … INVALIDA
+		//SE NO FINAL A PILHA ESTIVER VAZIA A EXPRESS√ÉO √â VALIDA , CASO CONTRARIO √â INVALIDA
 		if (pilha.estaVazia()) {
 			return true;
 		}
@@ -49,7 +49,7 @@ public class Pilha_analizar_express„o {
 	}
 	@Override
 	public String toString() {
-		return "Analizar Express„o: " + expressao + " ";
+		return "Analizar Express√£o: " + expressao + " ";
 	}
 
 }
