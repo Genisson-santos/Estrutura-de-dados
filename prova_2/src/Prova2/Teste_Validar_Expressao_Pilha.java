@@ -9,17 +9,16 @@ public class Teste_Validar_Expressao_Pilha {
 
 //Expressão inválida   
 
-		 //String expressao = ("A + B * (C + D] * E");
+		String expressao1 = ("A + B * (C + D] * E");
 
 		Pilha_analizar_expressao expressao_entrada = new Pilha_analizar_expressao(expressao);
 		System.out.println(expressao_entrada.toString());
 		//System.out.println(expressao_entrada.validarExpressao());
-		
-		if (expressao_entrada.validarExpressao()) {
-			System.out.println("Expressão valida!");
-		} else {
-			System.out.println("Expressão invalida!");
-		}
-	}
+					
+		Pilha_analizar_expressao expressao_entrada1 = new Pilha_analizar_expressao(expressao1);
+		System.out.println(expressao_entrada1.toString());
+		// System.out.println(expressao_entrada1.validarExpressao());
 
+
+	}
 }
