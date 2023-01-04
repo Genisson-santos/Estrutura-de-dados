@@ -48,8 +48,14 @@ public class Pilha_analizar_expressao {
 		return false;
 	}
 	@Override
-	public String toString() {
-		return "Analizar Expressão: " + expressao + " ";
-	}
+		public String toString() {
 
+		if (validarExpressao()) {
+
+			return "Analizar Expressão: " + expressao + " " + "  " + "\nExpressão Válida! " + "\n";
+		} else {
+			return "Analizar Expressão: " + expressao + " " + "   " + "\nExpressão Inválida! " + "\n";
+		}
+
+	}
 }
